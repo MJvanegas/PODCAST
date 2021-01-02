@@ -1,0 +1,680 @@
+*{
+    font-family: 'IBM Plex Sans', sans-serif;
+    padding: 0;
+    margin:0;
+    border:0;
+    box-sizing:border-box;
+    font-size: 16px;
+}
+body{
+    width: 100%;
+}
+header{
+    width:100%;
+    height:44px;
+    background-color: #FFFFFF;
+    top:0;
+    left: 0;
+    z-index:100;
+    position: absolute;
+}
+label #bars, label #cancel{
+    position: absolute;
+    text-align: center;
+}
+label #cancel{
+    opacity: 0;
+    visibility: hidden;
+}
+#boton_menu{
+    float: right;
+    display: none;
+}
+header label{
+    display: none;
+    width:60px;
+    padding: 10px;
+    color:#060A24;
+    transition: all 500ms ease;
+    float: right;
+}
+.logo{
+    margin-top:0.625em;
+    margin-bottom: 0.625em;
+    margin-left:1em;
+    width: 1.5em;
+    height: 1.5em;
+}
+.texto{
+    width:100%;
+}
+.texto h1{
+    margin-top: 73px;
+    font-size: 2.25em;
+    margin-left: 16px;
+    position: relative;
+}
+#world{
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+    text-decoration: line-through;
+}
+#punto{
+    font-family: IBMPlexSans;
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+}
+.texto p{
+    position: relative;
+    font-family: 'IBM Plex Mono', monospace;
+    margin: 16px 16px;
+    width: 288px;
+    font-size: 14px;
+    height: 56px;
+}
+#conoce{
+    background-color: #00F3BB;
+    font-size: 16px;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 22px;
+    color: black;
+    text-transform: uppercase;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 24px;
+    margin-top: 20px;
+    height: 48px;
+    width:288px;
+    position: relative;
+
+}
+#conoce:hover{
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+}
+.contenedor{
+    display: block;
+    width: 100%;
+    height: 1203.5px;
+    background-image: linear-gradient(#0000FF,#0000A3);
+    clip-path: polygon(0% 4%,100% 0%, 100% 96%,0% 100%);
+    z-index: 10;
+    position: relative;
+}
+#episodios{
+    color:#ffffff;
+    font-size: 36px;
+    position: relative;
+    margin-left: 16px;
+    line-height: 42px;
+    padding-top: 64px;
+    padding-bottom: 21px;
+}
+.iframe{
+    width: 100%;
+    padding-bottom: 11px;
+    left: 11px;
+   padding-right: 11px;
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.iframe .episodio1{
+    width:100%; 
+    height:232px;
+    margin-right: 11px;
+}
+.iframe .episodio2{
+    width:100%; 
+    height:232px;
+    margin-top:4px;
+}
+.iframe .episodio3{
+    width:100%; 
+    height:232px;
+    margin-top:4px;
+}
+.iframe .episodio4{
+    width:100%; 
+    height:232px;
+    margin-top:4px;
+ 
+}
+.donde{
+    width: 320px;
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 346px;
+    margin-bottom: 54px;
+}
+.donde .phone{
+    width: 360px;
+    height: 519px;
+    position: relative;
+    margin-top: -95.5px;
+    z-index: 15;
+    padding-right: 40px;
+}
+#nosotros{
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+    margin-bottom: 8px;
+    margin-left: 16px;
+    margin-top: 27px;
+    width: 100%;
+    height: 84px;
+}
+.donde div{
+    width: 100%;
+}
+.donde div p{
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin-left: 16px;
+    margin-right: 16px;
+    width: 288px;
+    height: 254px;
+}
+#entrevistas{
+    font-size:36px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+    margin-bottom: 14px;
+    margin-left: 16px;
+    width: 100%;
+    height: 84px;
+}
+.invitadas div{
+
+    position: relative;
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.invitadas div img{
+    width: 100%;
+}
+#topicos{
+    width: 100%;
+    height: 84px;
+    margin-top: 48px;
+    margin-bottom: 36px;
+    margin-left: 16px;
+    margin-right: 16px;
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+}
+figcaption{
+    font-size: 24px;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+    font-weight: bold;
+    margin-top:13px;
+    margin-right: 16px;
+    width: 100%;
+}
+figure img{
+    width: 100%;
+    height: 104px;
+}
+.temas .repensando{
+    margin-top: 36px;
+}
+.temas .codigo{
+    margin-top: 39px;
+}
+.temas div{
+    position: relative;
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr;
+    grid-template-rows: 162px 246px 234px 198px;
+}
+.masinfo{
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: 341px;
+    background-image: linear-gradient(#0000FF,#0000A3);
+    clip-path: polygon(0% 6%,100% 0%, 100% 100%,0% 100%);
+    z-index: 15;
+    position: relative;
+
+}
+.masinfo h2{
+    position: relative;
+    font-size: 36px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 42px;
+    font-family: 'IBM Plex Sans';
+    margin:auto;
+    padding-top: 64px;
+    padding-bottom: 36px;
+    width: 288px;
+    height: 190px;
+}
+.masinfo button{
+    background-color: #00F3BB;
+    font-size: 16px;
+    color: #06070c;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 22px;
+    text-transform: uppercase;
+    height: 48px;
+    width:288px;
+    margin-top: 36px;
+    position: relative;
+}
+footer{
+    width: 100%;
+    height: 121px;
+}
+footer p{
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
+    text-align: center;
+    margin-top:24px;
+}
+footer div{
+    width: 100%;
+    height: 28px;
+    text-align: center;
+}
+footer i{
+    font-size: 16px;
+    color: #060A24;
+    line-height: 28px;
+    margin-top:16px;
+    letter-spacing: 25px;
+}
+
+@media screen and (max-width: 1439px){
+    body{
+        width:100%;
+    }
+    .logo{
+        margin-top:0.625em;
+        margin-bottom: 0.625em;
+        margin-left:1em;
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    header label{
+        display:block;
+    }
+    .menu{
+        position: absolute;
+        background-color: #0000EC;
+        width: 100%;
+        height: 224px;
+        margin-top: -100%;
+        padding-top: 16px;
+        padding-left: 16px;
+        transition: all 500ms ease;
+    }
+    .menu ul{
+        text-transform: uppercase;
+        flex-direction: column;
+        text-decoration: none;
+        list-style: none;
+    }
+    .menu ul li a{
+        font-size: 16px;
+        font-family:'IBM Plex Mono', monospace;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        line-height: 44px;
+        text-decoration:none;
+    }
+
+    #boton_menu:checked~.menu{
+        margin: 0;
+    }
+
+    #boton_menu:checked ~ label #bars{
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    #boton_menu:checked ~ label #cancel{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+
+@media screen and (min-width: 1440px){
+    body{
+        width: 100%;
+        padding: 0;
+    }
+    .menu ul{
+        margin-top:26px;
+        list-style: none;
+        text-decoration: none;
+        padding-right:100px;
+        display: flex;
+        float:right;
+    }
+    .menu li a{
+        width: 1440px;
+        position: relative;
+        text-decoration: none;
+        color:#060A24;
+        padding: 15px 20px;
+        transition: all 500ms ease;
+    }
+   #conoce:hover{
+        background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    }
+    .menu ul a:hover{
+        text-decoration:line-through;
+        font-size: 16px;
+        color: #00F3BB;
+        letter-spacing: 0;
+        line-height: 28px;
+
+    }
+    .menu ul a:active{
+        text-decoration:line-through;
+        font-size: 16px;
+        color: rgba(6,10,36,0.56);
+        letter-spacing: 0;
+        line-height: 28px;
+    }
+    header{
+        width: 1440px;
+        height: 80px;
+    }
+    .logo{
+        margin-top:1.375em;
+        margin-bottom: 1.3755em;
+        margin-left:6.25em;
+        width: 2.25em;
+        height: 2.25em;
+        float: left;
+    }
+    .texto{
+        width: 1440px;
+    }
+    .texto h1{
+        margin-top: 120px;
+        margin-left: 200px;
+        position: relative;
+        font-size: 64px;
+        color: #060A24;
+        letter-spacing: 0;
+    }
+    #world{
+        font-size: 64px;
+        color: #060A24;
+        letter-spacing: 0;
+    }
+    br{
+        display:none;
+    }
+    #punto{
+        font-size: 64px;
+        color: #0000EC;
+        letter-spacing: 0;
+    }
+    .texto p{
+        position: relative;
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 16px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 24px;
+        margin-left: 200px;
+        height:48px;
+        width: 628px;
+    }
+    #conoce{
+        background-color: #00F3BB;
+        color: black;
+        font-size: 16px;
+        text-transform: uppercase;
+        margin-left:200px;
+        margin-top:40px;
+        height: 56px;
+        width:226px;
+        position: relative;
+    
+    }
+    section .contenedor{
+        display: block;
+        width: 100%;
+        height: 1042.6px;
+        background-image: linear-gradient(#0000FF,#0000A3);
+        clip-path: polygon(0% 15%,100% 0%, 100% 85%,0% 100%);
+        z-index: 10;
+        position: relative;
+    }    
+    #episodios{
+        color:#ffffff;
+        font-size: 36px;
+        position: relative;
+        margin-left: 200px;
+        line-height: 42px;
+        padding-top: 186px;
+        padding-bottom: 21px;
+    }
+    .iframe{
+        width: 1440px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        position: relative;
+    }
+    .iframe .episodio1{
+        margin-top: 26px;
+        margin-left: 100px;
+        width:584px; 
+        height:232px;
+    }
+    .iframe .episodio2{
+        margin-top: 26px;
+        margin-left: 72px;
+        width:584px; 
+        height:232px;
+    }
+    .iframe .episodio3{
+        margin-top: 72px;
+        margin-left: 100px;
+        width:584px; 
+        height:232px;
+    }
+    .iframe .episodio4{
+        margin-top: 72px;
+        margin-left: 72px;
+        width:584px;
+        height:232px;
+    
+    }    
+    .donde{
+        width: 100%;
+        margin-top: 100px;
+        display: grid;
+        position: relative;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr;
+    }
+    .donde .phone{
+        width: 457.6px;
+        height: 620px;
+        position: relative;
+        margin-top: -250px;
+        z-index: 15;
+        margin-left: 200px;
+    }
+    #nosotros{
+        font-size: 48px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 42px;
+        margin-bottom: 8px;
+        margin-left: 16px;
+        margin-top: 27px;
+        width: 399px;
+        height: 62px;
+    }
+    .donde div p{
+        font-size: 16px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 24px;
+        margin-left: 16px;
+        margin-right: 16px;
+        width: 464px;
+        height: 204px;
+    }
+    #entrevistas{
+        font-size:48px;
+        color: #060A24;
+        letter-spacing: 0;
+        margin-bottom: 14px;
+        margin-left: 200px;
+        width: 481px;
+        height: 62px;
+    }
+    .invitadas div{
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .invitadas div img{
+        width: 100%;
+    }
+    #topicos{
+        width: 586px;
+        height: 62px;
+        margin-top: 48px;
+        margin-left: 200px;
+        margin-right: 654px;
+        font-size: 48px;
+        color: #060A24;
+        letter-spacing: 0;
+    }
+    figure img{
+        margin:13px 78px;
+        width: 104px;
+        height:104px;
+    }
+    figcaption{
+        font-size: 24px;
+        color: #060A24;
+        text-align: center;
+        font-weight: bold;
+        margin:0;
+    }
+    .temas div{
+        margin-top: 0;
+        margin-left: 200px;
+        margin-right: 200px;
+        display: grid;
+        grid-template-columns:260px 260px 260px 260px;
+        grid-template-rows: 1fr;
+    }
+    .remoto{
+        margin-top: 36px;
+        margin-bottom: 0px;
+    }
+    .repensando{
+        margin-top:0;
+    }
+    .codigo{
+        margin-top:0;
+    }
+    .seguridad{
+        margin-top:36px;
+    }
+    .masinfo{
+        display: block;
+        width: 100%;
+        height: 518px;
+        background-image: linear-gradient(#0000FF,#0000A3);
+        clip-path: polygon(0% 20%,100% 0%, 100% 100%,0% 100%);
+        z-index: 15;
+        position: relative;
+    }
+    .masinfo h2{
+        position: relative;
+        font-size: 48px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        text-align: center;
+        font-family: 'IBM Plex Sans';
+        margin-bottom: 36px;
+        padding-top: 213px;
+        width: 100%;
+        height: 62px;
+    }
+    .masinfo button{
+        background-color: #00F3BB;
+        font-size: 18px;
+        color: #06070c;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 24px;
+        text-transform: uppercase;
+        margin-top: 36px;
+        margin-left: 547px;
+        margin-right: 547px;
+        height: 56px;
+        width:345px;
+        position: relative;
+    }
+    footer{
+        width: 100%;
+        height: 95px;
+    }
+    footer p{
+        font-size: 16px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 28px;
+        text-align: center;
+        width: 269px;
+        float: left;
+        margin-top:31px;
+        margin-left: 100px;
+    }
+    footer div{
+        margin-right: 100px;
+        width: 228px;
+        height: 28px;
+        margin-top: 18px;
+        float:right;
+    }
+    footer i{
+        font-size: 18px;
+        color: #060A24;
+        line-height: 28px;
+        letter-spacing: 25px;
+        display: inline;
+    }
+    
+}
